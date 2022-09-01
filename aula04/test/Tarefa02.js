@@ -1,10 +1,10 @@
 const { expect } = require("chai");
 
-describe("Token contract - Tarefa01", function () {
+describe("Token contract - Tarefa02", function () {
   it("Deployment should assign the total supply of tokens to the owner", async function () {
     const [owner] = await ethers.getSigners();
 
-    const Token = await ethers.getContractFactory("Tarefa01");
+    const Token = await ethers.getContractFactory("Tarefa02");
 
     const hardhatToken = await Token.deploy();
 
